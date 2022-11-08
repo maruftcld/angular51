@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Trainee } from 'src/model/Trainee.model';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+
+  save(data :Trainee){
+    console.log(data.name);
+  }
+
   
   twoWayData = "";
   sendValue(temp){
