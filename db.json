@@ -1,0 +1,16 @@
+{
+  "trainee": [
+    {
+      "name": "book",
+      "email": "maruf.tcld@gmail.com",
+      "course": "JEE",
+      "id": 1
+    },
+    {
+      "name": "bookcgh",
+      "email": "maruf.tcld@gmail.coms",
+      "course": "JEE",
+      "id": 2
+    }
+  ]
+}

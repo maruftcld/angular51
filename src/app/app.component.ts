@@ -10,7 +10,7 @@ export class AppComponent {
 
 
   save(data :Trainee){
-    console.log(data.name);
+    console.log(data);
   }
 
   

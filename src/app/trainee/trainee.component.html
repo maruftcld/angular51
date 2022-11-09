@@ -1,0 +1,19 @@
+<p>
+  Trainee Registration
+</p>
+
+<form #traineeForm = "ngForm" (ngSubmit)="save(traineeForm.value)">
+  Name <input type="text" ngModel name="name"><br>
+  Email <input type="text" ngModel name="email"><br>
+  Course <input type="text" ngModel name="course"><br>
+  <input type="submit" value="Save">
+</form>
+
+<table style="border: 1px solid blue;">
+  <tr *ngFor="let trainee of trainees">
+      <td>{{trainee.name}}</td>
+      <td>{{trainee.email}}</td>
+      <td>{{trainee.course}}</td>
+  </tr>
+</table>
+
