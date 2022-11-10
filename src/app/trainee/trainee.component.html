@@ -3,10 +3,11 @@
 </p>
 
 <form #traineeForm = "ngForm" (ngSubmit)="save(traineeForm.value)">
-  Name <input type="text" ngModel name="name"><br>
-  Email <input type="text" ngModel name="email"><br>
-  Course <input type="text" ngModel name="course"><br>
-  <input type="submit" value="Save">
+  <input type="hidden" ngModel name="id" [value]="trainee.id"><br>
+  Name <input type="text" ngModel name="name" [value]="trainee.name"><br>
+  Email <input type="text" ngModel name="email" [value]="trainee.email"><br>
+  Course <input type="text" ngModel name="course" [value]="trainee.course"><br>
+<input type="submit" [value]="option" class="btn btn-primary">
 </form>
 
 <table style="border: 1px solid blue;">
@@ -14,6 +15,12 @@
       <td>{{trainee.name}}</td>
       <td>{{trainee.email}}</td>
       <td>{{trainee.course}}</td>
+      <td>
+        <button  (click)="edit(trainee)" >Edit</button>
+      </td>
+      <td>
+        <button (click)="delete(trainee)" >Delete</button>
+      </td>
   </tr>
 </table>
 
